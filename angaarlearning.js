@@ -292,17 +292,52 @@
 // reduce***********************
 // arrays ko utata aur 1 ko prev 2nd ko current
 
-// like return 2 toh voh previuos hojayega
+// like return 2 toh voh previuos hojayega-mtlb previous ki value 2 hojayegi
 
 // let arr=[1,2,3,4,5,6];
 
 // let ans = arr.reduce(function(prev,curr){
 //     console.log(prev,curr);
-//     return prev+curr;
-//     // return 2;
+//     // return prev+curr;
+//     return 2;
 
 // })
 // console.log(ans);
+
+
+
+
+
+// friday
+// high
+// higher order function and callback function
+// recivs another function as a arguemet-higher order
+
+// let greet = function(kuchtohbol){
+//     kuchtohbol();
+//     return arguments;
+// }
+// function say(){
+//     console.log("hi");
+// }
+// greet(say);
+
+// 2nd condition
+// let func1 = function(){
+//     function sayHi(){
+//         console.log("hi");
+//     }
+//     return sayHi();//jb function sayHi k ander return ni krte toh undefine degA 
+// }
+// let ans = func1();
+// console.log(ans);//UNDEFINE ISSE AYEGA
+
+// GEC-GLOBAL EXECUTION CENTRE-STACK-RUN KRTE HI BROWSER VARIBALE EK PAPER M LIKHNA CHALU KREGA
+// MCP-FOCUS ON VARIABLE NAME AND FUNCTION NAME-page/stack m name likhna shuru krenge
+// cep-function ko value di 
+// whnenever a fuc is call a new global execution with name of function -dusre wala function jo has same phase
+
+// 1.MCP-MEMORY CREATION PHASEE.2.CODE EXECUTION PHASE
 
 
 
