@@ -338,6 +338,8 @@
 // whnenever a fuc is call a new global execution with name of function -dusre wala function jo has same phase
 
 // 1.MCP-MEMORY CREATION PHASEE.2.CODE EXECUTION PHASE
+// new learning
+
 
 
 
