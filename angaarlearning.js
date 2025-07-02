@@ -340,6 +340,184 @@
 // 1.MCP-MEMORY CREATION PHASEE.2.CODE EXECUTION PHASE
 // new learning
 // times
+// array stored-sequential manner
+// let greeting = function(){
+//     console.log("hii");
+// }
+// let a = [123,"sharad",true,greeting,];
+// console.log(a[2],a[1],a[3]());//it gives undefine why-output-true 'sharad' undefined-jb bhi hm function m return ni krte toh voh undefine hi dega
+
+// ***************************************************************************************
+// higher order function-map,reduce
+// callback function
+// higher-a function that takes another function as a arguemnt and also u have to execute it
+// callback-function that is being pass in another function
+// callback-2- you have to execute this function
+
+
+/*let greet = function(kuchtohbol){
+    kuchtohbol();
+}*/
+
+
+// ***************
+// here greet is higher order function
+// and say is call back*******
+
+/*function say(){
+    console.log("say hi");
+} 
+greet(say);*/
+
+// two condition
+// 2nd one
+
+
+// function func1(){
+//     function sayHi(){
+//         console.log("hi"); 
+//     }
+//         return sayHi;//undefine
+//     // return sayHi;
+// }
+
+// let ans = func1();//undefine
+// ans();//undefine() //error
+// console.log(ans);
+
+// tuesday******************
+// promise-object
+// asychronos task perform-resolving-rejecting(incomplete)
+// application-asynchronos->calling api/third parties
+
+// how to create a promise**************
+
+// let prom = new Promise(function(resolve,reject){
+//     // task 5000=5sec
+
+//     /* resolve(); */
+
+//     setTimeout(function(){
+//         resolve("Promise resolved");
+//     },5000);
+// });
+// state - pending,fulfilled,rejected**********
+
+// data
+// console.log(prom);
+
+// function myPromise(paise){
+//     // bhai promise kr
+//     return new Promise(function(resolve,reject){
+//         // setTimeout(function(){
+//         //      if(paise>100){
+//         //     resolve("bhai yeh le tere paise");
+//         //     }
+//         //     else{
+//         //         reject("bhai main ni derha");
+//         //     }
+//         // },3000);
+
+
+//         if(paise>100){
+//             resolve("bhai yeh le tere paise");
+//         }
+//         else{
+//             reject("bhai main ni derha");
+//         }
+//     })
+// };
+// let ans = myPromise(9);
+// // console.log(ans);
+
+// // then-resolve and catch-error
+// ans.then(function(data){
+//     // result data
+//     console.log(data);
+//     // kaam
+//     console.log("thanks bhai");
+// })
+
+// // catch-catch the error
+// .catch(function(err){
+//     // result errror
+//     console.log(err);
+//     console.log("sorry bhai");
+// })
+
+
+// *****Arraw functions
+
+// let a = ()=>{
+//     console.log("hi");
+//     return 2;
+// }
+
+// let a = ()=>2;
+// a();
+
+// let a = (num)=> num*2;//this keyword different behavr krta hae
+// let b = ()=>"hi";
+// console.log(a(3));
+// console.log(b());
+
+// ******PROTOTYPE-its an object-fallback source-dont need to create again a prototype
+// prototype include-push pop map etc
+
+
+// let arr=[1,2,3,4,5];
+// console.log(arr.length);
+// let obj={
+//     name:"pragati",
+//     age:21,
+// };
+// console.log(obj);
+
+// async function dosomething(){
+//     // api calling and db queries
+//     let a = dosomething();
+// }
+// a.then-incomplete
+
+const url = "https://images.dog.ceo/breeds/terrier-fox/n02095314_3217.jpg";
+let ans = fetch(url);
+console.log(ans);
+// ans.then((data)=>{
+//     // console.log(data.);
+//     // console.log("got the answer");
+
+//     console.log(data);
+//     return data.json();
+
+// })
+// .then((data2)=>{
+//     console.log(data2.message);
+// })   
+
+// 2nd way
+
+async function getdata(){
+    let a = await fetch(url);//-promise get handed
+    let b = await a.json();//-promise
+    console.log(b);
+ 
+}
+getdata();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
