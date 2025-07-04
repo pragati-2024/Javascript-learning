@@ -359,7 +359,6 @@
     kuchtohbol();
 }*/
 
-
 // ***************
 // here greet is higher order function
 // and say is call back*******
@@ -406,6 +405,9 @@ greet(say);*/
 // data
 // console.log(prom);
 
+
+
+
 // function myPromise(paise){
 //     // bhai promise kr
 //     return new Promise(function(resolve,reject){
@@ -430,6 +432,31 @@ greet(say);*/
 // let ans = myPromise(9);
 // // console.log(ans);
 
+// function paise(amount){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(function(){
+//             if(amount < 100){
+//                 resolve("bhai paise dene ki ki jrurat nai hae");
+//             }
+//             else{
+//                 reject("bhai ni tu aaj hi paise de");
+//             }
+//         },0);
+//     });
+// };
+// let ans = paise(10);
+// console.log(ans);
+
+
+// ans.then(function(data){
+//     console.log(data);
+//     console.log("thanks bhai");
+// })
+// .catch(function(err){
+//      console.log(err);
+//     console.log("sorry bhai")
+// })
+
 // // then-resolve and catch-error
 // ans.then(function(data){
 //     // result data
@@ -452,6 +479,8 @@ greet(say);*/
 //     console.log("hi");
 //     return 2;
 // }
+// let k = (bums)=>bums*2;
+// console.log(k(8));
 
 // let a = ()=>2;
 // a();
@@ -479,9 +508,30 @@ greet(say);*/
 // }
 // a.then-incomplete
 
-const url = "https://images.dog.ceo/breeds/terrier-fox/n02095314_3217.jpg";
-let ans = fetch(url);
-console.log(ans);
+// const url = "https://images.dog.ceo/breeds/terrier-fox/n02095314_3217.jpg";
+// let ans = fetch(url);
+// console.log(ans);
+
+// data.then((res)=>{
+//     // console.log(data);
+//     console.log("2");
+//     console.log(res);
+
+//     // return promise <-a 
+//     let a =res.json();//function body stream k ander jayega uske ander ka data bahar leaayega
+// // basically try to extract entire meta data(data about data)-.json
+//     return a;//return promise
+// })
+
+// .then((finalData)=>{
+//     console.log("1");
+//     console.log(finalData);
+// })
+// .catch((error)=>{
+//     console.log(err);
+// })
+
+
 // ans.then((data)=>{
 //     // console.log(data.);
 //     // console.log("got the answer");
@@ -496,13 +546,125 @@ console.log(ans);
 
 // 2nd way
 
-async function getdata(){
-    let a = await fetch(url);//-promise get handed
-    let b = await a.json();//-promise
-    console.log(b);
+// async function getdata(){
+//     let a = await fetch(url);//-promise get handeleopd
+//     let b = await a.json();//-promise
+//     console.log(b);
  
-}
-getdata();
+// }
+// getdata();
+
+// wednesdy
+
+// api
+
+// async and await
+// const url = "https://images.dog.ceo/breeds/terrier-fox/n02095314_3217.jpg";
+// async function getdata() {
+//     try{
+//         let a =await fetch(url);
+//     // await-use to handle promise
+//     console.log(a);
+
+    
+//     let b = await a.json();
+
+//     console.log(b);
+//     }
+//     catch(err){
+//         console.log(err);
+//     }
+// }
+// getdata(url);
+
+// object dedega  dir-html format ki jgh object m covert krke dega
+// console.dir(document);
+// console.log(document);
+
+// let h = document.querySelector('h1');
+// console.log(h);
+// console.log(h);
+// console.dir(h);
+
+// let h = document.querySelector('#head');
+// let h = document.querySelector('.inner');
+// console.log(h);
+
+// let  allho = document.querySelectorAll('h1');
+// console.log(allho[0]);
+
+// let h = document.querySelector('h1');
+// // console.log(h1.textcontent);
+// console.log(div);
+// console.log(div.innerText);
+// console.log(div.TextContent);
+// console.log(div.innerHTML);
+
+// let h1 = document.querySelector('h1');
+// h1.textContent = "hi pragati";
+
+// let div = document.querySelector('div');
+// let ht = div.innerHTML;
+// div.innerHTML = ''
+
+// let h = document.querySelector('h1'); 
+// let d = document.querySelector('div'); 
+// // console.log(d.innerText);
+// // console.log(d.textContent);
+// console.log(d.innerHTML);
+
+// let change = (' <h1 id="head" class="inner">PANDA SAY HII</h1>');
+// d.innerHTML = change;
+// // text change hojayega
+// // 3 ways-innerText-text visible on bbrowsee 
+// // textContent-hidden data   , innerHTML-full html template
+
+// setTimeout(()=>{
+//     let change = (' <h1 id="head" class="inner">PANDA SAY HII TO ALL PEOPLE</h1>');
+//     d.innerHTML = change;
+// },5000);
+
+// let d = document.querySelector('div');
+// console.log(d.getAttribute("class"));
+
+//  let d = document.querySelector('div');
+// //  d.setAttribute("class","light");
+// setTimeout(()=>{
+//      d.setAttribute("class","light");
+// },5000);
+
+
+// ************************************************************************
+// let d = document.querySelector('div');
+// console.log(d.style);
+// d.style.backgroundColor = 'plum';
+// d.style.border= "4px solid pink";
+// d.style.padding = "2rem";
+// d.style.textShadow = "4px 4px lightpink";
+// d.style.boxShadow = "2px 2px lightpink";
+// d.style.borderRadius = "25px solid pink";
+// d.style.display = "flex";
+// d.style.gap = "2rem";
+// d.style.alignItems = "center";
+// d.style.justifyContent = "center";
+
+let d = document.querySelector('div');
+// console.log(d.classList);
+// d.classList.add("dark");
+// console.log(d.classList.contains("dark"));
+// d.classList.remove("dark");
+// console.log(d.classList.contains("dark"));
+
+// toggle means add krn clss ko
+d.classList.toggle("dark");
+// d.classList.toggle("dark");
+// 2 times toh hatjayegi
+
+
+
+
+
+
 
 
 
