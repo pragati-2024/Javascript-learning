@@ -1,6 +1,8 @@
 // console.log("PRAGATI");
 // input
 
+// const { createElement } = require("react");
+
 // let a = prompt("hi sharad write something");
 // console.log(a);
 
@@ -656,9 +658,22 @@ let d = document.querySelector('div');
 // console.log(d.classList.contains("dark"));
 
 // toggle means add krn clss ko
-d.classList.toggle("dark");
+// d.classList.toggle("dark");
 // d.classList.toggle("dark");
 // 2 times toh hatjayegi
+
+// let newh = document.createElement('h1');
+// console.log(newh);
+// newh.innerText="neww heading";
+// newh.setAttribute("class","inner");
+// d.appendChild(newh);
+// d.append("add me onec");
+// d.append("hyy panda");
+let h = document.querySelector('div');
+
+// h.append("add me onec");
+// h.prepend("hyy panda");
+h.remove();
 
 
 
